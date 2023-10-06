@@ -153,16 +153,15 @@ a.socialIcon:hover,
             <div class="card">
                 <form class="box" method="post" enctype="multipart/form-data">
                   {% csrf_token %}
-                    <h1>Customer Sign Up</h1>
+                    <h1>Criar Conta</h1>
                     
-                      {% render_field userForm.first_name class="form-control" placeholder="First Name" %}
-                        {% render_field userForm.last_name class="form-control" placeholder="Last Name" %}
-                          {% render_field userForm.username class="form-control" placeholder="Username" %}
-                            {% render_field userForm.password class="form-control" placeholder="Password" %}
-                              {% render_field customerForm.address class="form-control" placeholder="Address" %}
-                                {% render_field customerForm.mobile class="form-control" placeholder="Contact" %}
-                                  {% render_field customerForm.profile_pic class="form-control" placeholder="Profile pic" %}
-                  
+                      {% render_field userForm.first_name class="form-control" placeholder="Nome" %}
+                        {% render_field userForm.last_name class="form-control" placeholder="Sobrenome" %}
+                          {% render_field userForm.username class="form-control" placeholder="Nome de Usuário" %}
+                            {% render_field userForm.password class="form-control" placeholder="Senha" %}
+                              {% render_field customerForm.address class="form-control" placeholder="Email" %}
+                                {% render_field customerForm.mobile class="form-control" placeholder="Telefone" %}
+                                    {% render_field customerForm.cpf class="form-control" placeholder="CPF" %}
                      <input type="submit" name="" value="Create">
 
                 </form>
