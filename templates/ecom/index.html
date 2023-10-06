@@ -464,12 +464,19 @@ img {
 {%endif%}
 
 <script>
-    {%if messages %}
-    {%for message in messages%}
-    alert('{{message}}');
-    {%endfor%}
-    {%endif%}
+    {% if messages %}
+        var messages = [
+            {% for message in messages %}
+                '{{ message }}',
+            {% endfor %}
+        ];
+
+        messages.forEach(function(message) {
+            alert(message);
+        });
+    {% endif %}
 </script>
+
 <br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br>
 
