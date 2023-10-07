@@ -12,6 +12,23 @@ body {
     background-color: #f7f7f7;
 }
 
+.img_logo {
+            width: 187px; /* Defina a largura da imagem conforme necessário */
+            height: auto; /* Mantenha a proporção da imagem */
+            margin-right: 10px; /* Adicione um espaço à direita da imagem */            
+            
+        }
+        
+.container_apr {
+            display: flex; /* Use display: flex para alinhar elementos lado a lado */
+            align-items: center; /* Alinhe verticalmente os elementos ao centro */
+        } 
+
+.smallsearch {
+    display:flexbox;
+    flex: 1
+}
+
 #navbar {
     background-color: #3e454c;
     color: black;
@@ -205,11 +222,14 @@ body {
                 
             </ul>
         </div>
-        <div class="row row2">
-            <div class="col-sm-3">
-                <h2 style="margin:0px;"><a style="text-decoration:none; color:white;" href="/"><span class="largenav">Simple Ecommerce </span></a></h2>
-            </div>
 
+        <div class="container_apr">
+            <a style="text-decoration:none; color:white;" href="/">
+              <img class="img_logo" src="/static/images/asg_logo.svg" alt="logo">
+            </a>
+          </div>
+
+        <div class="row row2">
 
             <div class="navbar-search smallsearch col-sm-7 col-xs-11">
               <form  action="/search" method="get">
@@ -222,6 +242,7 @@ body {
                 </div>
               </form>
             </div>
+
 
 
             <div class="cart1 largenav col-sm-2"> <a class="cart-button" href="/cart"> <svg class="cart-svg " width="16 " height="16 " viewBox="0 0 16 16 ">

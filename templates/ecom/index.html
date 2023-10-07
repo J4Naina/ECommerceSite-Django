@@ -362,6 +362,7 @@ img {
   transition: left 0s .75s;
 }
 
+
 [id^="slide"]:checked + .slide {
   left: 0;
   z-index: 100;
@@ -386,10 +387,10 @@ img {
   <div class="col-md-12">
     <div class="slider-container">
       <div class="menu">
-        <label for="slide-dot-1"></label>
-        <label for="slide-dot-2"></label>
-        <label for="slide-dot-3"></label>
-        <label for="slide-dot-4"></label>
+          <label for="slide-dot-1"></label>
+          <label for="slide-dot-2"></label>
+          <label for="slide-dot-3"></label>
+          <label for="slide-dot-4"></label>
       </div>
       
       <input id="slide-dot-1" type="radio" name="slides" checked>
@@ -439,7 +440,7 @@ img {
                 <a class="cart" href="{% url 'add-to-cart' p.id  %}">
                   <span class="price">${{p.price}}</span>
                   <span class="add-to-cart">
-                    <span class="txt"><i class="fa fa-shopping-cart"></i> Add To Cart</span>
+                    <span class="txt"><i class="fa fa-shopping-cart"></i>Adicionar ao Carrinho</span>
                   </span>
                 </a>
               </div>
@@ -486,3 +487,4 @@ developed By : sumit kumar
 -->
 
 {% endblock content %}
+
