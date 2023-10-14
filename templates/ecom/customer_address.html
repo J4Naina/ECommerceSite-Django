@@ -98,17 +98,17 @@ select{
 
     </li>
     <li>
-        <label>Mobile <span class="required">*</span></label>
-        {% render_field addressForm.Mobile class="field-long" placeholder="Mobile" %}
+        <label>Número de celular <span class="required">*</span></label>
+        {% render_field addressForm.Mobile class="field-long" placeholder="Número de celular" %}
     </li>
 
     <li>
-        <label>Shipment Address <span class="required">*</span></label>
-        {% render_field addressForm.Address id="field5" class="field-long field-textarea" placeholder="Building Number,city, pin" %}
+        <label>Endereço de entrega <span class="required">*</span></label>
+        {% render_field addressForm.Address id="field5" class="field-long field-textarea" placeholder="Número, cidade, rua e estado" %}
 
     </li>
     <li>
-        <input type="submit" value="Proceed To Pay" />
+        <input type="submit" value="Processar para pagamento" />
     </li>
 </ul>
 </form>
