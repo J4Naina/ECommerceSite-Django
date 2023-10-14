@@ -52,29 +52,29 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <br><br><br><br><br><br>
-<!------ update page for doctor by admin(sumit)  ---------->
+
 <form method="post" enctype="multipart/form-data">
   {% csrf_token %}
   <div class="container register-form">
     <div class="form">
       <div class="note">
-        <p>Update Product Details</p>
+        <p>Atualizar detalhes do produto</p>
       </div>
       <div class="form-content">
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <label for="">Product Name</label>
+              <label for="">Nome do produto</label>
               {% render_field productForm.name class="form-control" placeholder="Product Name" %}
             </div>
             <div class="form-group">
-              <label for="">Product Description</label>
+              <label for="">Descrição do produto</label>
               {% render_field productForm.description class="form-control" placeholder="Description" %}
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <label for="">Product Price</label>
+              <label for="">Preço do produto</label>
               {% render_field productForm.price class="form-control" placeholder="Price" %}
             </div>
             <div class="form-group">
@@ -84,13 +84,11 @@
 
           </div>
         </div>
-        <button type="submit" class="btnSubmit">Update Product Details</button>
+        <button type="submit" class="btnSubmit">Atualizar informações do produto</button>
       </div>
     </div>
   </div>
 </form>
-<!--
-developed By : sumit kumar
--->
+
 
 {% endblock content %}
