@@ -200,7 +200,7 @@ p {
                     
                     
                     </div> <br>
-                    <h4><a style="text-decoration:none;" href="{% url 'download-invoice' order.id product.id  %}" ><button class="btn btn-danger btn-sm">Download Invoice</button></a></h4>
+                    <h4><a style="text-decoration:none;" href="{% url 'download-invoice' order.id product.id  %}" ><button class="btn btn-danger btn-sm">Download Fatura</button></a></h4>
                 </li>
                 {%endfor%}
             </ul>
@@ -208,25 +208,25 @@ p {
 
             <div class="track">
                 {%if order.status == 'Pending' %}
-                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-spinner"></i> </span> <span class="text">Order Pending</span> </div>
-                <div class="step "> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-check"></i> </span> <span class="text"> Order Confirmed</span> </div>
-                <div class="step "> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-truck"></i> </span> <span class="text"> On the way </span> </div>
-                <div class="step "> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-home"></i> </span> <span class="text">Delivered</span> </div>
+                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-spinner"></i> </span> <span class="text">Pedido pendente</span> </div>
+                <div class="step "> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-check"></i> </span> <span class="text"> Pedido confirmado</span> </div>
+                <div class="step "> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-truck"></i> </span> <span class="text"> No caminho </span> </div>
+                <div class="step "> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-home"></i> </span> <span class="text">Entregue</span> </div>
                 {%elif order.status == 'Order Confirmed' %}
-                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-spinner"></i> </span> <span class="text">Order Pending</span> </div>
-                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-check"></i> </span> <span class="text"> Order Confirmed</span> </div>
-                <div class="step "> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-truck"></i> </span> <span class="text"> On the way </span> </div>
-                <div class="step "> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-home"></i> </span> <span class="text">Delivered</span> </div>
+                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-spinner"></i> </span> <span class="text">Pedido pendente</span> </div>
+                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-check"></i> </span> <span class="text"> Pedido confirmado</span> </div>
+                <div class="step "> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-truck"></i> </span> <span class="text"> No caminho </span> </div>
+                <div class="step "> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-home"></i> </span> <span class="text">Entregue</span> </div>
                 {%elif order.status == 'Out for Delivery'%}
-                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-spinner"></i> </span> <span class="text">Order Pending</span> </div>
-                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-check"></i> </span> <span class="text"> Order Confirmed</span> </div>
-                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-truck"></i> </span> <span class="text"> On the way </span> </div>
-                <div class="step "> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-home"></i> </span> <span class="text">Delivered</span> </div>
+                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-spinner"></i> </span> <span class="text">Pedido pendente</span> </div>
+                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-check"></i> </span> <span class="text"> Pedido confirmado</span> </div>
+                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-truck"></i> </span> <span class="text"> No caminho </span> </div>
+                <div class="step "> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-home"></i> </span> <span class="text">Entregue</span> </div>
                 {%else%}
-                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-spinner"></i> </span> <span class="text">Order Pending</span> </div>
-                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-check"></i> </span> <span class="text"> Order Confirmed</span> </div>
-                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-truck"></i> </span> <span class="text"> On the way </span> </div>
-                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-home"></i> </span> <span class="text">Delivered</span> </div>
+                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-spinner"></i> </span> <span class="text">Pedido pendente</span> </div>
+                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-check"></i> </span> <span class="text"> Pedido confirmado</span> </div>
+                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-truck"></i> </span> <span class="text"> No caminho </span> </div>
+                <div class="step active"> <span class="icon"> <i style="padding-top:3px; padding-right:25px;" class="fa fa-home"></i> </span> <span class="text">Entregue</span> </div>
                 {%endif%}
             </div>
 
